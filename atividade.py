@@ -1,6 +1,21 @@
-# Lista fornecida na atividade
-numeros = [10, 20, 30, 20, 40, 20, 50]
-print(Quantidade de elementos na lista:)
-print( O número 20 aparece vezes na lista.)"
-print(" A posição (índice) do número 30 é")
-print("   O número 100 está na lista?")
+aluno = {}
+
+nome = input("Digite o nome do aluno: ")
+nota1 = float(input("Digite a nota da prova 1: "))
+nota2 = float(input("Digite a nota da prova 2: "))
+
+aluno["nome"] = nome
+aluno["nota1"] = nota1
+aluno["nota2"] = nota2
+
+media = (nota1 + nota2) / 2
+aluno["media"] = media
+
+print("Dados do aluno:", aluno)
+
+if media >= 7:
+    print("Situação: Aprovado")
+elif media >= 5:
+    print("Situação: Recuperação")
+else:
+    print("Situação: Reprovado")
