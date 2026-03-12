@@ -1,21 +1,11 @@
-aluno = {}
+# Gere uma função que mostre a soma e o produto de dois números
 
-nome = input("Digite o nome do aluno: ")
-nota1 = float(input("Digite a nota da prova 1: "))
-nota2 = float(input("Digite a nota da prova 2: "))
+def calcularoperacoes(n1, n2):
+    soma = (n1 + n2)
+    produto = (n1*n2)
+    
+    print (f"Soma: {soma}")
+    print (f"Produto {produto}")
 
-aluno["nome"] = nome
-aluno["nota1"] = nota1
-aluno["nota2"] = nota2
-
-media = (nota1 + nota2) / 2
-aluno["media"] = media
-
-print("Dados do aluno:", aluno)
-
-if media >= 7:
-    print("Situação: Aprovado")
-elif media >= 5:
-    print("Situação: Recuperação")
-else:
-    print("Situação: Reprovado")
+ resultadosoma, resultadoproduto = calcular_soma_produto(n1, n2)
+    print(f"Soma: {resultadosoma}, Produto: {resultadoproduto}")
